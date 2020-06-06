@@ -47,9 +47,6 @@ server.post('/savepoint', (req, res) => {
       console.log(err)
       return res.send('Erro no cadastro!')
     }
-    console.log('Cadastrado com sucesso')
-    console.log(this)
-
     res.render('create-point.html', { saved: true })
   }
 
