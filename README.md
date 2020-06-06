@@ -25,8 +25,8 @@ A busca recebe o nome da cidade digitada pelo usuário e retorna todos os regist
 Projeto com as mesmas funcionalidades propostas durante o evento Next Level Week
 ### busca_por_cep
 * Cadastro de pontos de coleta
- * Implementada funcionalidade de busca de endereço por CEP
- * Implementada tela de erro quando há problema na inserção de dados no banco de dados
- * Alterações visuais para abarcar o novo campo criado
+  * Implementada funcionalidade de busca de endereço por CEP
+  * Implementada tela de erro quando há problema na inserção de dados no banco de dados
+  * Alterações visuais para abarcar o novo campo criado
 * Busca de pontos de coleta
- * Ao encontrar apenas um registro, alterado o texto para uso do singular
+  * Ao encontrar apenas um registro, alterado o texto para uso do singular
