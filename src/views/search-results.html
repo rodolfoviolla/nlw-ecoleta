@@ -15,8 +15,11 @@
   <main>
     {% if total > 0 %}
       <h4>
-        <strong>{{ total }} pontos</strong>
-        encontrados
+        {% if total == 1 %}
+          <strong>1 ponto</strong> encontrado
+        {% else %}
+          <strong>{{ total }} pontos</strong> encontrados
+        {% endif %}
       </h4>
       <div class="cards">
         {% for place in places %}

@@ -42,15 +42,15 @@ server.post('/savepoint', (req, res) => {
     req.body.items
   ]
 
+  db.run(query, values, afterInsertData)
+
   function afterInsertData(err) {
     if (err) {
-      console.log(err)
-      return res.send('Erro no cadastro!')
+      // Adicionada rota caso dê erro na inserção dos dados
+      return res.render('create-point.html', { error: true })
     }
     res.render('create-point.html', { saved: true })
   }
-
-  db.run(query, values, afterInsertData)
 })
 
 // Buscar pontos de coleta
