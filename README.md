@@ -1,6 +1,6 @@
 # nlw
 
-Projeto realizado no evento Next Level Week da Rocketseat
+Projeto realizado no evento Next Level Week da [Rocketseat](https://rocketseat.com.br/)
 
 ## Ecoleta
 Aplicação de cadastro de pontos de coleta de materiais recicláveis e pesquisa de pontos de coleta por cidade
