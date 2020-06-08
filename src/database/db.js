@@ -8,6 +8,26 @@ module.exports = db
 
 // Utilizar o objeto de banco de dados
 db.serialize(() => {
+  // Inserir campo na tabela
+  //db.run(`ALTER TABLE places ADD cep TEXT;`)
+  
+  // Criar uma tabela
+  // db.run(`
+  // CREATE TABLE IF NOT EXISTS places (
+  //   id INTEGER PRIMARY KEY AUTOINCREMENT,
+  //   image TEXT,
+  //   name TEXT,
+  //   adress TEXT,
+  //   adress2 TEXT,
+  //   state TEXT,
+  //   city TEXT,
+  //   items TEXT
+  // );
+  // `)
+
+  // Atualizar dados na tabela
+  //db.run(`UPDATE places SET cep = '01001-010' WHERE id = 10;`)
+
   // Consultar dados na tabela
   // db.all(`SELECT * FROM places`, function(err, rows) {
   //   if (err) {

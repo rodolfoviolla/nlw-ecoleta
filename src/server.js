@@ -29,8 +29,9 @@ server.post('/savepoint', (req, res) => {
       adress2,
       state,
       city,
-      items
-    ) VALUES (?,?,?,?,?,?,?);
+      items,
+      cep
+    ) VALUES (?,?,?,?,?,?,?,?);
   `
   const values = [
     req.body.image,
@@ -39,7 +40,8 @@ server.post('/savepoint', (req, res) => {
     req.body.adress2,
     req.body.state,
     req.body.city,
-    req.body.items
+    req.body.items,
+    req.body.cep
   ]
 
   db.run(query, values, afterInsertData)
